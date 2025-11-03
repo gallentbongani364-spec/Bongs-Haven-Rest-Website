@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bongs Haven Restaurant</title>
+<!-- Include Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  #logo {
+    display: flex;
+    align-items: center;
+  }
+  #logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  /* Book Now button styles */
+  .book-btn {
+    background-color: #e53935;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  /* Hero section styles */
+  .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* Overlay text container with background for better visibility */
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    border-radius: 10px;
+  }
+  .overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .overlay p {
+    font-size: 1.2em;
+  }
+
+  /* Buttons inside overlay */
+  .overlay .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background-color: #e53935;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+
+  .overlay .btn:hover {
+    background-color: #d32f2f;
+  }
+
+  /* Social icons at bottom right */
+  .social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .social-icons a:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+  <div id="logo">
+    <img src="Untitled-1.png" alt="Bongs Haven Logo" />
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="contact us.html">Contact Us</a>
+  </nav>
+ <a href="menu.html" class="book-btn">Book Now →</a>
+</header>
+
+<!-- Hero Image with overlay -->
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Delicious Food" />
+  <div class="overlay">
+    <h1>Elevate Your taste Buds-<br>Gourmet Dining At it’s finest</h1>
+    <p>Indulge in expertly crafted dishes made with the freshest ingredients, served in a warm and inviting atmosphere</p>
+    <a class="btn" href="menu.html">Book Now</a>
+  </div>
+</div>
+
+<!-- Social Media Icons with Font Awesome -->
+<div class="social-icons">
+  <a href="#" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="#" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+
+</body>
+</html>
